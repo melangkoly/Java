@@ -1,6 +1,6 @@
 package com.java.phone;
 
-public class PBVO {
+public class PBVO {//
 	private Long id;
 	private String pbName;
 	private String pbHp;
