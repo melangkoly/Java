@@ -1,63 +1,53 @@
 package com.java.phone;
 
 public class PBVO {
-	private Long id; // PK
-	private String name;
-	private String hp;
-	private String tel;
+	private Long id;
+	private String pbName;
+	private String pbHp;
+	private String pbTel;
 	
-	public PBVO(){
-		// 기본 생성자
-	}
-	
-	public PBVO(Long id, String name) {
-		this.id = id;
-		this.name = name;
-	}
-	PBVO(Long id, String name, String hp, String tel){
-		this(id, name);
-		this.hp = hp;
-		this.tel = tel;
+	public PBVO() {
 		
-		this.name = name == null ? " " : name;
 	}
-	
-	
+	public PBVO(Long id, String pbName, String pbHp, String pbTel) {
+		this.id = id;
+		this.pbName = pbName;
+		this.pbHp = pbHp;
+		this.pbTel = pbTel;
+		
+		this.pbName = pbName == null ? " " : pbName;
+		this.pbHp = pbHp == null ? " " : pbHp;
+		this.pbTel = pbTel == null ? " " : pbTel;
+	}
 	public Long getId() {
 		return id;
 	}
-
 	public void setId(Long id) {
 		this.id = id;
 	}
-
-	public String getName() {
-		return name;
+	public String getPbName() {
+		return pbName;
 	}
-
-	public void setName(String name) {
-		this.name = name == null ? " " : name;
+	public void setPbName(String pbName) {
+		this.pbName = pbName;
 	}
-
-	public String getHp() {
-		return hp;
+	public String getPbHp() {
+		return pbHp;
 	}
-
-	public void setHp(String hp) {
-		this.hp = hp;
+	public void setPbHp(String pbHp) {
+		this.pbHp = pbHp;
 	}
-
-	public String getTel() {
-		return tel;
+	public String getPbTel() {
+		return pbTel;
 	}
-
-	public void setTel(String tel) {
-		this.tel = tel;
+	public void setPbTel(String pbTel) {
+		this.pbTel = pbTel;
 	}
-
 	@Override
 	public String toString() {
-		return "PBVO [id=" + id + ", name=" + name + ", hp=" + hp + ", tel=" + tel + "]";
+		return "PBVO [id=" + id + ", pbName=" + pbName + ", pbHp=" + pbHp + ", pbTel=" + pbTel + "]";
 	}
+	
+	
 	
 }
